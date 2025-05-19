@@ -9,7 +9,7 @@
 
 def main():
     # Creates pet object
-    myPet = Pet('','','')
+    myPet = Pet()
 
     # Sets value for name
     myPet.set_name(input('Enter a pet name:'))
@@ -34,7 +34,9 @@ def main():
 # Defines Pet class
 class Pet:
     def __init__(self, name, type, age):
-        pass
+        self.name = ''
+        self.type = ''
+        self.age = ''
 
     # Defines name
     def set_name(self, name):
